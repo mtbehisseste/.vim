@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/ludueinstain/data_structure/HW01_104502559'
+let g:netrw_dirhist_2='/home/ludueinstain/.vim/colors'

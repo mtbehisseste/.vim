@@ -122,9 +122,6 @@ set scrolloff=3
 "set foldcolumn=1
 "set foldlevel=5
 
-" 在 fish 裡相容 Vim 裡的 Neobundle。
-set shell=/bin/bash
-
 " 高亮當前行 (水平)。
 "set cursorline
 
@@ -144,7 +141,7 @@ set guifont=DejaVu_Sans_Mono:h11
 
 set autoindent
 
-set showmatch
+"set showmatch
 
 "setting powerline 
 set rtp+=/home/ludueinstain/.local/lib/python2.7/site-packages/powerline/bindings/vim/

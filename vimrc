@@ -30,6 +30,9 @@ Plugin 'ascenator/L9', {'name': 'newL9'}
 "highlight cpp syntax
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
+"assembly language highlight 
+Plugin 'shirk/vim-gas'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

@@ -161,3 +161,8 @@ map  <F5> :NERDTreeToggle<CR>"
 
 "close vim when the last window is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Wq wq
+cnoreabbrev WQ wq

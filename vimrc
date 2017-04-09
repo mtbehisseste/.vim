@@ -151,5 +151,13 @@ set rtp+=/home/ludueinstain/.local/lib/python2.7/site-packages/powerline/binding
 set laststatus=2
 set t_Co=256
 
-"open NERDTree when pressing f5
-nnoremap <silent> <F5> :NERDTree<CR>
+"==========NERDTree configure=============
+
+"auto open NERDTree when open vim
+autocmd vimenter * NERDTree
+
+"toggle NERDTree using f5
+map  <F5> :NERDTreeToggle<CR>"
+
+"close vim when the last window is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif

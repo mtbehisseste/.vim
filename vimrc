@@ -154,7 +154,7 @@ set t_Co=256
 "==========NERDTree configure=============
 
 "auto open NERDTree when open vim
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 
 "toggle NERDTree using f5
 map  <F5> :NERDTreeToggle<CR>"

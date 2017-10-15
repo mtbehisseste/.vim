@@ -157,7 +157,7 @@ hi Constant   ctermfg=221
 " \n, \t, \x00 in <str>
 hi Special    ctermfg=41
 " # comment
-hi Comment    ctermfg=41
+hi Comment    ctermfg=241
 " TODO, FIXME, XXX
 hi Todo       ctermfg=41  cterm=reverse
 

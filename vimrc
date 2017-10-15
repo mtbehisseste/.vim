@@ -133,16 +133,17 @@ cnoreabbrev Wq wq
 cnoreabbrev WQ wq
 
 "mapping shortcuts
-map <C-a> <esc>ggVG<CR>
-map <C-w> <esc>:tabclose<CR>
-inoremap <C-z>   <esc>:u<CR>
-nnoremap <C-z>   <esc>:u<CR><i>
+map <C-a> <Esc>ggVG<CR>
+map <C-w> <Esc>:tabclose<CR>
+inoremap <C-z>   <Esc>:u<CR>
+nnoremap <C-z>   <Esc>:u<CR><i>
 nnoremap <C-S-T> :tabprevious<CR>
 nnoremap <C-T>   :tabnext<CR>
 nnoremap <C-t>   :tabnew<CR>
 inoremap <C-S-T> <Esc>:tabprevious<CR>
 inoremap <C-T>   <Esc>:tabnext<CR>
 inoremap <C-t>   <Esc>:tabnew<CR>
+nnoremap <C-S-i> <Esc>gg=G<CR>
 
 "set masm syntax
 let filetype_asm = "asm"

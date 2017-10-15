@@ -101,8 +101,9 @@ filetype plugin indent on    " required
 "let g:jellybeans_overrides = {
 "\    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
 "\}
-"colorscheme jellybeans
+colorscheme jellybeans
 
+"set t_Co=256
 "colorscheme seti
 
 "colorscheme luthadel
@@ -113,8 +114,18 @@ filetype plugin indent on    " required
 "syntax on
 "color dracula
 
-colorscheme codedark
-let g:airline_theme = 'codedark'
+"colorscheme codedark
+"let g:airline_theme = 'codedark'
+
+"colorscheme desert
+
+"syntax enable
+"set background=dark
+"set t_Co=16
+"let g:solarized_termcolors=256
+"colorscheme solarized
+
+"color zenburn
 
 "-----------------NERDTree configure---------------
 "auto open NERDTree when open vim

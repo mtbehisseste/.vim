@@ -17,4 +17,4 @@ A mix-up of many plugins and wierd settings.
 
 - [YouCompeleteMe](https://github.com/ycm-core/YouCompleteMe)
 
-- [supertab](https://github.com/ervandew/supertab): enable <tab> to auto complete
+- [supertab](https://github.com/ervandew/supertab): enable &lt;tab&gt; to auto complete

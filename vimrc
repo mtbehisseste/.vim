@@ -47,11 +47,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim' 
 
-" theme
-Plugin 'trusktr/seti.vim'
-Plugin 'chriskempson/base16-vim'
-Plugin 'nanotech/jellybeans.vim' 
-
 " powerline
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'

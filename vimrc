@@ -23,9 +23,8 @@ set incsearch
 set noexpandtab
 set t_Co=256
 set clipboard=unnamed
-set pastetoggle=<F10> " disable auto insert comment
-
-let g:airline_theme='powerlineish'
+" set pastetoggle=<F10> " disable auto insert comment
+set paste
 
 " -----mapping shortcuts-----
 map <C"-a> <Esc>ggVG<CR>
@@ -38,8 +37,10 @@ inoremap <C-S-T> <Esc>:tabprevious<CR>
 inoremap <C-T>   <Esc>:tabnext<CR>
 inoremap <C-t>   <Esc>:tabnew<CR>
 nnoremap <C-S-i> <Esc>gg=G<CR>
-" toggle NERDTree using f5
-map  <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
+
+" map * to stop at current occurrence rather than the next occurrence
+map * <Plug>(incsearch-nohl-*)<Plug>(incsearch-nohl-N)
 
 " -----Vundle setup------
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -63,9 +64,10 @@ Plugin 'haya14busa/incsearch.vim'
 " nerdcommenter
 Plugin 'scrooloose/nerdcommenter'
 
+" enable completion using <Tab>
 Plugin 'ervandew/supertab' 
 
-" changes checker
+" changes indecator
 Plugin 'chrisbra/changesPlugin'
 
 " cpp syntax
@@ -85,7 +87,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " -----NERD Commenter-----
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
-let g:NERDCommentEmptyLines = 1
+let g:NERDCommentEmptyLines = 0
 let g:NERDDefaultAlign = 'left'
 
 " -----colorscheme-----
@@ -94,6 +96,10 @@ let g:NERDDefaultAlign = 'left'
 " \}
 " colorscheme jellybeans
 colorscheme luthadel
+
+" -----airline theme-----
+let g:airline_powerline_fonts = 1
+let g:airline_theme='powerlineish'
 
 " -----for mis-typing-----
 cnoreabbrev W w

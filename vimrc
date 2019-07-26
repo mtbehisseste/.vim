@@ -38,6 +38,11 @@ inoremap <C-T>   <Esc>:tabnext<CR>
 inoremap <C-t>   <Esc>:tabnew<CR>
 nnoremap <C-S-i> <Esc>gg=G<CR>
 map <C-n> :NERDTreeToggle<CR>
+" more instinctive move
+map H b
+map L w
+map J }
+map K {
 
 " map * to stop at current occurrence rather than the next occurrence
 map * <Plug>(incsearch-nohl-*)<Plug>(incsearch-nohl-N)

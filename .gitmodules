@@ -28,3 +28,6 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab
+[submodule "bundle/markdown-preview.vim"]
+	path = bundle/markdown-preview.vim
+	url = https://github.com/iamcco/markdown-preview.vim

@@ -76,6 +76,12 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 " nerdtree
 Plugin 'scrooloose/nerdtree'
 
+" golang syntax
+Plugin 'fatih/vim-go'
+
+" markdown preview
+Plugin 'iamcco/markdown-preview.vim'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -100,6 +106,7 @@ colorscheme luthadel
 " -----airline theme-----
 let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
+let g:airline_detect_modified=1
 
 " -----for mis-typing-----
 cnoreabbrev W w
@@ -123,3 +130,11 @@ let g:changes_fast = 0
 " -----Cpp syntax enhance-----
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
+
+" -----Golang syntax enhance-----
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_types = 1
+let g:go_highlight_function_calls = 1

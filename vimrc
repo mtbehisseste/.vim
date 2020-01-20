@@ -17,10 +17,9 @@ set autochdir
 set scrolloff=3
 set cursorline
 set ruler 
-set backspace=2
 set backspace=indent,eol,start
 set incsearch
-set noexpandtab
+set expandtab
 set t_Co=256
 set clipboard=unnamed
 " set pastetoggle=<F10> " disable auto insert comment
@@ -79,6 +78,7 @@ let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 let g:NERDCommentEmptyLines = 0
 let g:NERDDefaultAlign = 'left'
+let g:NERDToggleCheckAllLines = 1
 
 " -----colorscheme-----
 " let g:jellybeans_overrides = {
@@ -124,7 +124,6 @@ let g:go_highlight_structs = 1
 let g:go_highlight_types = 1
 let g:go_highlight_function_calls = 1
 
-
 " -----mapping shortcuts-----
 map <C"-a> <Esc>ggVG<CR>
 inoremap <C-z>   <Esc>:u<CR>
@@ -137,14 +136,7 @@ inoremap <C-T>   <Esc>:tabnext<CR>
 inoremap <C-t>   <Esc>:tabnew<CR>
 nnoremap <C-S-i> <Esc>gg=G<CR>
 map <C-n> :NERDTreeToggle<CR>
-" more instinctive move
-" map H b
-" map L w
-" map J }
-" map K {
-" map 9 $
+
 " map * to stop at current occurrence rather than the next occurrence
 map * <Plug>(incsearch-nohl-*)<Plug>(incsearch-nohl-N)
 
-" -----python auto append enviroment-----
-" autocmd BufNewfile *.py call append(0,'#!/usr/bin/env python')

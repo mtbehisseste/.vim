@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# cloning repository
-git clone --recursive https://github.com/mtbehisseste/.vim.git
-
 # -----YouCompleteMe-----
 sudo apt install build-essential cmake python3-dev
 cd ~/.vim/bundle/YouCompleteMe

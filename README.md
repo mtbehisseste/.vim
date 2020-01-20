@@ -23,5 +23,7 @@ A mix-up of many plugins and wierd settings.
 
 ## Installation (Requires `sudo` while installing prerequests)
 ```bash 
-$ ./install.sh
+$ git clone --recursive https://github.com/mtbehisseste/.vim.git
+$ cd .vim
+$ bash ./install.sh
 ```

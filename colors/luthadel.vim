@@ -258,7 +258,7 @@ hi pythonSelf                   ctermfg=203
 hi pythonExtraOperator          ctermfg=209
 " " -= /= *= &&
 hi pythonExtraPseudoOperator    ctermfg=209
-hi pythonQuotes				    ctermfg=221
-hi pythonColon					ctermfg=254
-hi pythonBrackets				ctermfg=254
-hi pythonDecorator			    ctermfg=203
+hi pythonQuotes         	    ctermfg=221
+hi pythonColon                  ctermfg=254
+hi pythonBrackets               ctermfg=254
+hi pythonDecorator              ctermfg=203

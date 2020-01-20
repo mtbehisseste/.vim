@@ -254,10 +254,11 @@ hi Conceal      ctermbg=21 cterm=underline
 " python syntax
 " " self class
 hi pythonSelf                   ctermfg=203
-" " is and not or
-" hi pythonOperator               ctermfg=46
-" " all arithmatic operator
+" " ~!^&|*@
 hi pythonExtraOperator          ctermfg=209
+" " -= /= *= &&
 hi pythonExtraPseudoOperator    ctermfg=209
-" hi pythonString                 ctermfg=221
-" hi pythonNumber                 ctermfg=117
+hi pythonQuotes				    ctermfg=221
+hi pythonColon					ctermfg=254
+hi pythonBrackets				ctermfg=254
+hi pythonDecorator			    ctermfg=203

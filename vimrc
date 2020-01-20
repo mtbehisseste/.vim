@@ -24,28 +24,7 @@ set noexpandtab
 set t_Co=256
 set clipboard=unnamed
 " set pastetoggle=<F10> " disable auto insert comment
-set paste
-
-" -----mapping shortcuts-----
-map <C"-a> <Esc>ggVG<CR>
-inoremap <C-z>   <Esc>:u<CR>
-nnoremap <C-z>   <Esc>:u<CR><i>
-nnoremap <C-S-T> :tabprevious<CR>
-nnoremap <C-T>   :tabnext<CR>
-nnoremap <C-t>   :tabnew<CR>
-inoremap <C-S-T> <Esc>:tabprevious<CR>
-inoremap <C-T>   <Esc>:tabnext<CR>
-inoremap <C-t>   <Esc>:tabnew<CR>
-nnoremap <C-S-i> <Esc>gg=G<CR>
-map <C-n> :NERDTreeToggle<CR>
-" more instinctive move
-map H b
-map L w
-map J }
-map K {
-
-" map * to stop at current occurrence rather than the next occurrence
-map * <Plug>(incsearch-nohl-*)<Plug>(incsearch-nohl-N)
+" set paste
 
 " -----Vundle setup------
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -109,7 +88,7 @@ let g:NERDDefaultAlign = 'left'
 colorscheme luthadel
 
 " -----airline theme-----
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
 let g:airline_detect_modified=1
 
@@ -122,6 +101,7 @@ nmap :W :w
 nmap :Q :q
 nmap :Wq :wq
 nmap :WQ :wq
+nmap :q1 :q!
 
 " -----YouCompleteMe-----
 let g:ycm_autoclose_preview_window_after_completion = 1
@@ -143,3 +123,28 @@ let g:go_highlight_operators = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_types = 1
 let g:go_highlight_function_calls = 1
+
+
+" -----mapping shortcuts-----
+map <C"-a> <Esc>ggVG<CR>
+inoremap <C-z>   <Esc>:u<CR>
+nnoremap <C-z>   <Esc>:u<CR><i>
+nnoremap <C-S-T> :tabprevious<CR>
+nnoremap <C-T>   :tabnext<CR>
+nnoremap <C-t>   :tabnew<CR>
+inoremap <C-S-T> <Esc>:tabprevious<CR>
+inoremap <C-T>   <Esc>:tabnext<CR>
+inoremap <C-t>   <Esc>:tabnew<CR>
+nnoremap <C-S-i> <Esc>gg=G<CR>
+map <C-n> :NERDTreeToggle<CR>
+" more instinctive move
+" map H b
+" map L w
+" map J }
+" map K {
+" map 9 $
+" map * to stop at current occurrence rather than the next occurrence
+map * <Plug>(incsearch-nohl-*)<Plug>(incsearch-nohl-N)
+
+" -----python auto append enviroment-----
+" autocmd BufNewfile *.py call append(0,'#!/usr/bin/env python')

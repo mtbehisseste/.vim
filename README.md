@@ -20,3 +20,8 @@ A mix-up of many plugins and wierd settings.
 - [supertab](https://github.com/ervandew/supertab): enable &lt;tab&gt; to auto complete
 
 - [markdown-preview](https://github.com/iamcco/markdown-preview.vim) 
+
+## Installation (Requires `sudo` while installing prerequests)
+```bash 
+$ ./install.sh
+```

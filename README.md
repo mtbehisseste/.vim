@@ -25,5 +25,5 @@ A mix-up of many plugins and wierd settings.
 ```bash 
 $ git clone --recursive https://github.com/mtbehisseste/.vim.git
 $ cd .vim
-$ bash ./install.sh
+$ ./install.sh
 ```

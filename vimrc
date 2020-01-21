@@ -125,17 +125,11 @@ let g:go_highlight_types = 1
 let g:go_highlight_function_calls = 1
 
 " -----mapping shortcuts-----
-map <C"-a> <Esc>ggVG<CR>
-inoremap <C-z>   <Esc>:u<CR>
-nnoremap <C-z>   <Esc>:u<CR><i>
-nnoremap <C-S-T> :tabprevious<CR>
-nnoremap <C-T>   :tabnext<CR>
-nnoremap <C-t>   :tabnew<CR>
-inoremap <C-S-T> <Esc>:tabprevious<CR>
-inoremap <C-T>   <Esc>:tabnext<CR>
-inoremap <C-t>   <Esc>:tabnew<CR>
-nnoremap <C-S-i> <Esc>gg=G<CR>
 map <C-n> :NERDTreeToggle<CR>
+nnoremap <C-b>h <C-w>h
+nnoremap <C-b>j <C-w>j
+nnoremap <C-b>k <C-w>k
+nnoremap <C-b>l <C-w>l
 
 " map * to stop at current occurrence rather than the next occurrence
 map * <Plug>(incsearch-nohl-*)<Plug>(incsearch-nohl-N)

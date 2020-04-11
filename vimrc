@@ -22,6 +22,8 @@ set incsearch
 set expandtab
 set t_Co=256
 set clipboard=unnamed
+set splitright
+set splitbelow
 " set pastetoggle=<F10> " disable auto insert comment
 " set paste
 

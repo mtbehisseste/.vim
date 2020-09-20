@@ -75,6 +75,12 @@ let g:NERDTreeQuitOnOpen = 1
 " close vim when the last window is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" return to last edit position when opening file, credit @Mosky
+autocmd BufReadPost *
+\ if line("'\"") > 0 && line("'\"") <= line('$') |
+\   exe "normal! g`\"" |
+\ endif
+
 " -----NERD Commenter-----
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
@@ -104,6 +110,8 @@ nmap :Q :q
 nmap :Wq :wq
 nmap :WQ :wq
 nmap :q1 :q!
+" type `'s` to return to origin place (marked) after search
+nnoremap / ms/
 
 " -----YouCompleteMe-----
 let g:ycm_autoclose_preview_window_after_completion = 1
@@ -118,6 +126,9 @@ let g:changes_fast = 0
 " -----Cpp syntax enhance-----
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
+
+" -----python syntax enhance-----
+let g:python_highlight_all = 1
 
 " -----Golang syntax enhance-----
 let g:go_highlight_functions = 1
